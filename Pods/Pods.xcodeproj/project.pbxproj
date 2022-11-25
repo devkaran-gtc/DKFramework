@@ -23,11 +23,11 @@
 		300F26FE7BE1BC4B25A3E78A0A47A5D5 /* Pods-DKFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DKFramework-acknowledgements.plist"; sourceTree = "<group>"; };
 		30DBCEA26EBE421EFBA5C898E4A72253 /* Pods-DKFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DKFramework-umbrella.h"; sourceTree = "<group>"; };
 		39A74886359CAB32BB6741E7428BDD47 /* Pods-DKFramework-DKFrameworkTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DKFramework-DKFrameworkTests"; path = Pods_DKFramework_DKFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A334E767EFD790EE734A259EB55439C /* Pods-DKFramework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DKFramework"; path = Pods_DKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A334E767EFD790EE734A259EB55439C /* Pods_DKFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DKFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8F70001D54250A1841DBEFD261E98E0D /* Pods-DKFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DKFramework.release.xcconfig"; sourceTree = "<group>"; };
 		98E56FF857F63CDD079E7B10481B0663 /* Pods-DKFramework-DKFrameworkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DKFramework-DKFrameworkTests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A04471FE98DC1031078DBD6FA42505BC /* Pods-DKFramework-DKFrameworkTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DKFramework-DKFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		B26A65262515929736FAB629E56F3DE2 /* Pods-DKFramework-DKFrameworkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DKFramework-DKFrameworkTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B98CC1241D80AB3574EA2C722180E244 /* Pods-DKFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DKFramework-dummy.m"; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		9E31803944679C5CE387CECCFAE7C4D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A334E767EFD790EE734A259EB55439C /* Pods-DKFramework */,
+				3A334E767EFD790EE734A259EB55439C /* Pods_DKFramework.framework */,
 				39A74886359CAB32BB6741E7428BDD47 /* Pods-DKFramework-DKFrameworkTests */,
 			);
 			name = Products;
@@ -171,7 +171,7 @@
 			);
 			name = "Pods-DKFramework";
 			productName = Pods_DKFramework;
-			productReference = 3A334E767EFD790EE734A259EB55439C /* Pods-DKFramework */;
+			productReference = 3A334E767EFD790EE734A259EB55439C /* Pods_DKFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ADE5C4921BF9891E1771347BAD8A04C6 /* Pods-DKFramework-DKFrameworkTests */ = {
@@ -416,6 +416,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -453,6 +456,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
