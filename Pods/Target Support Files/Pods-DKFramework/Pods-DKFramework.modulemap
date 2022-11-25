@@ -1,0 +1,6 @@
+framework module Pods_DKFramework {
+  umbrella header "Pods-DKFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
